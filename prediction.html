@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <style>
+        /* CSS for increasing font size of list items */
+        li {
+            font-size: 20px; /* Change this value to adjust font size */
+        }
+    </style>
+</head>
+<body>
+    <h1>Prediction Results</h1>
+    <ul>
+        {% for class_label, accuracy in predictions %}
+            <li>{{ class_label }}: {{ accuracy }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
